@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Write a Bash script that listens on port 98 on localhost.
+
+listen_port() {
+    while true; do
+        # First listen on port 98 and display all incoming data
+        nc -l -p 98
+    done
+}
+
+# Then start listening on port 98
+listen_port
